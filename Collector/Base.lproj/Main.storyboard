@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,7 +35,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Collector" id="UKY-zl-l3P">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Mes-sT-nFm"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="wWa-cr-v7o"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Mes-sT-nFm">
+                            <connections>
+                                <segue destination="oeS-rQ-A6k" kind="show" id="eXX-QC-hCf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Crg-HO-M4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -51,6 +57,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="YeD-Ot-ZX4"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zf1-kO-xkg">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="tcp-QE-Pyu"/>
+                            <barButtonItem systemItem="organize" id="Qqx-VH-5Oh"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X19-Dq-W17" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
