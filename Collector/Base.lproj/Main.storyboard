@@ -56,7 +56,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yZ7-uI-TyU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Drawing" translatesAutoresizingMaskIntoConstraints="NO" id="yZ7-uI-TyU">
                                 <rect key="frame" x="20" y="84" width="335" height="260.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yZ7-uI-TyU" secondAttribute="height" multiplier="9:7" id="Iss-SJ-ihy"/>
@@ -116,4 +116,7 @@
             <point key="canvasLocation" x="-978" y="10"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Drawing" width="365" height="299"/>
+    </resources>
 </document>
