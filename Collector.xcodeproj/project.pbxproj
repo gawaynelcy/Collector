@@ -12,6 +12,7 @@
 		2FAEBEF81FE7EF4D000DE0A5 /* Collector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEBEF61FE7EF4D000DE0A5 /* Collector.xcdatamodeld */; };
 		2FAEBEFA1FE7EF4D000DE0A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAEBEF91FE7EF4D000DE0A5 /* Assets.xcassets */; };
 		2FAEBEFD1FE7EF4D000DE0A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAEBEFB1FE7EF4D000DE0A5 /* LaunchScreen.storyboard */; };
+		2FAEBF091FE8D43C000DE0A5 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEBF081FE8D43C000DE0A5 /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2FAEBEF91FE7EF4D000DE0A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FAEBEFC1FE7EF4D000DE0A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FAEBEFE1FE7EF4D000DE0A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FAEBF081FE8D43C000DE0A5 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				2FAEBEEF1FE7EF4C000DE0A5 /* AppDelegate.swift */,
+				2FAEBF081FE8D43C000DE0A5 /* AddItemViewController.swift */,
 				2FAEBEF31FE7EF4C000DE0A5 /* Main.storyboard */,
 				2FAEBEF91FE7EF4D000DE0A5 /* Assets.xcassets */,
 				2FAEBEFB1FE7EF4D000DE0A5 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				2FAEBEF81FE7EF4D000DE0A5 /* Collector.xcdatamodeld in Sources */,
 				2FAEBEF01FE7EF4C000DE0A5 /* AppDelegate.swift in Sources */,
+				2FAEBF091FE8D43C000DE0A5 /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
