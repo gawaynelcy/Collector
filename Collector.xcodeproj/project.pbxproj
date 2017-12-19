@@ -13,6 +13,7 @@
 		2FAEBEFA1FE7EF4D000DE0A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAEBEF91FE7EF4D000DE0A5 /* Assets.xcassets */; };
 		2FAEBEFD1FE7EF4D000DE0A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAEBEFB1FE7EF4D000DE0A5 /* LaunchScreen.storyboard */; };
 		2FAEBF091FE8D43C000DE0A5 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEBF081FE8D43C000DE0A5 /* AddItemViewController.swift */; };
+		2FAEBF0B1FE8E1AC000DE0A5 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEBF0A1FE8E1AC000DE0A5 /* ItemsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2FAEBEFC1FE7EF4D000DE0A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FAEBEFE1FE7EF4D000DE0A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FAEBF081FE8D43C000DE0A5 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		2FAEBF0A1FE8E1AC000DE0A5 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				2FAEBEEF1FE7EF4C000DE0A5 /* AppDelegate.swift */,
+				2FAEBF0A1FE8E1AC000DE0A5 /* ItemsTableViewController.swift */,
 				2FAEBF081FE8D43C000DE0A5 /* AddItemViewController.swift */,
 				2FAEBEF31FE7EF4C000DE0A5 /* Main.storyboard */,
 				2FAEBEF91FE7EF4D000DE0A5 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			files = (
 				2FAEBEF81FE7EF4D000DE0A5 /* Collector.xcdatamodeld in Sources */,
 				2FAEBEF01FE7EF4C000DE0A5 /* AppDelegate.swift in Sources */,
+				2FAEBF0B1FE8E1AC000DE0A5 /* ItemsTableViewController.swift in Sources */,
 				2FAEBF091FE8D43C000DE0A5 /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
