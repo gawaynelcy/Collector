@@ -24,11 +24,13 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
 
     @IBAction func photosTapped(_ sender: Any) {
     // (3)
-        imagePicker.sourceType = .photoLibrary // (7)
-        present(imagePicker, animated: true, completion: nil) // (8)
+        imagePicker.sourceType = .photoLibrary // (7.1)
+        present(imagePicker, animated: true, completion: nil) // (8.1)
     }
     
     @IBAction func cameraTapped(_ sender: Any) {
+        imagePicker.sourceType = .camera // (7.2)
+        present(imagePicker, animated: true, completion: nil) // (8.2)
     // (4)
     }
     
