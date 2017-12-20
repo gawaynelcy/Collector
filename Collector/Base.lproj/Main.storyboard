@@ -75,14 +75,29 @@
                                     <action selector="addTapped:" destination="oeS-rQ-A6k" eventType="touchUpInside" id="sPM-CL-oE5"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tPj-qI-maB">
+                                <rect key="frame" x="5" y="428" width="365" height="230"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Family" translatesAutoresizingMaskIntoConstraints="NO" id="yzB-NG-S3G">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="230"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="yzB-NG-S3G" secondAttribute="height" multiplier="73:46" id="R0r-Af-Y7b"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yZ7-uI-TyU" firstAttribute="leading" secondItem="YeD-Ot-ZX4" secondAttribute="leading" constant="20" id="0nh-UN-jSb"/>
+                            <constraint firstItem="tPj-qI-maB" firstAttribute="centerX" secondItem="Jb7-Sw-ASG" secondAttribute="centerX" id="5jN-Pk-U8E"/>
                             <constraint firstItem="yZ7-uI-TyU" firstAttribute="top" secondItem="YeD-Ot-ZX4" secondAttribute="top" constant="20" id="ENA-o6-mAe"/>
+                            <constraint firstItem="yzB-NG-S3G" firstAttribute="top" secondItem="yZ7-uI-TyU" secondAttribute="bottom" constant="83.5" id="Kyf-xE-Lh5"/>
                             <constraint firstItem="HBp-EL-MMd" firstAttribute="centerX" secondItem="Jb7-Sw-ASG" secondAttribute="centerX" id="NQs-vV-odW"/>
+                            <constraint firstItem="tPj-qI-maB" firstAttribute="leading" secondItem="YeD-Ot-ZX4" secondAttribute="leading" constant="5" id="NXP-rO-lub"/>
                             <constraint firstItem="Oue-gD-kUg" firstAttribute="top" secondItem="yZ7-uI-TyU" secondAttribute="bottom" constant="8" id="Xl9-SA-6C2"/>
                             <constraint firstItem="yZ7-uI-TyU" firstAttribute="centerX" secondItem="Jb7-Sw-ASG" secondAttribute="centerX" id="dqL-HM-EJr"/>
+                            <constraint firstItem="YeD-Ot-ZX4" firstAttribute="trailing" secondItem="tPj-qI-maB" secondAttribute="trailing" constant="5" id="eK4-zJ-2Eb"/>
                             <constraint firstItem="YeD-Ot-ZX4" firstAttribute="trailing" secondItem="yZ7-uI-TyU" secondAttribute="trailing" constant="20" id="fb6-nz-Yho"/>
                             <constraint firstItem="HBp-EL-MMd" firstAttribute="top" secondItem="yZ7-uI-TyU" secondAttribute="bottom" constant="46" id="p0s-Li-KQr"/>
                             <constraint firstItem="YeD-Ot-ZX4" firstAttribute="trailing" secondItem="Oue-gD-kUg" secondAttribute="trailing" constant="20" id="qpt-Mo-JuH"/>
@@ -103,6 +118,11 @@
                                     <action selector="photosTapped:" destination="oeS-rQ-A6k" id="O6T-xT-oLA"/>
                                 </connections>
                             </barButtonItem>
+                            <barButtonItem title="S.S" style="plain" id="I4d-8z-2Ye">
+                                <connections>
+                                    <action selector="snapShot:" destination="oeS-rQ-A6k" id="RMi-C5-RGo"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -112,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X19-Dq-W17" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486.95652173913049" y="9.7826086956521738"/>
+            <point key="canvasLocation" x="485.60000000000002" y="9.4452773613193415"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qzG-Zh-nvn">
@@ -133,5 +153,6 @@
     </scenes>
     <resources>
         <image name="Drawing" width="365" height="299"/>
+        <image name="Family" width="960" height="639"/>
     </resources>
 </document>

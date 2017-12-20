@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import QuartzCore
+
 
 class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 // (10) - Add "UIImagePickerControllerDelegate, UINavigationControllerDelegate"
@@ -78,4 +80,48 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
         }
         
     }
+    
+    
+    @IBAction func snapShot(_ sender: Any) {
+        
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, UIScreen.main.scale)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        UIImageWriteToSavedPhotosAlbum(screenshot!, nil, nil, nil)
+        let activityVC = UIActivityViewController(activityItems: [screenshot!], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = self.view
+        
+        self.present(activityVC, animated: true, completion: nil)
+        
+       /*
+        if let window = UIApplication.shared.keyWindow {
+            UIGraphicsBeginImageContext(window.frame.size)
+            window.layer.render(in: UIGraphicsGetCurrentContext()!)
+            let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            UIImageWriteToSavedPhotosAlbum(screenshot!, nil, nil, nil)
+            */
+        
+        /*
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        UIImageWriteToSavedPhotosAlbum(screenshot!, nil, nil, nil)
+        let activityVC = UIActivityViewController(activityItems: [screenshot!], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = self.view
+        
+        self.present(activityVC, animated: true, completion: nil)
+ */
+    }
+    
+    /*
+    @IBAction func shareButton(_ sender: Any) {
+        let activityVC = UIActivityViewController(activityItems: [itemImageView.image!], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = self.view
+        
+        self.present(activityVC, animated: true, completion: nil)
+    }
+ */
 }
